@@ -7,7 +7,7 @@ Future<String> fetchToken() async {
   });
   //final headers = {"Content-Type": "application/json"};
   var url = 'https://api.sariska.io/api/v1/misc/generate-token';
-  var response = await http.post(url,
+  final response = await http.post(url,
       headers: {"Content-Type": "application/json"}, body: body);
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,

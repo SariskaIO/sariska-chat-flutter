@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
         accentColor: new Color(0xFF0096C7),
       ),
       home: new SariskaChatHome(
-        channel: new IOWebSocketChannel.connect("ws://echo.websocket.org"),
+        channel: new IOWebSocketChannel.connect(
+            "wss://api.sariska.io/api/v1/messaging/websocket/websocket"),
       ),
     );
   }
