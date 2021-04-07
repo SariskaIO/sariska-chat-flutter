@@ -1,6 +1,6 @@
-# chat_beta
+# SARISKA_CONNECT
 
-A new Flutter project.
+Example flutter app 
 
 ## Getting Started
 
