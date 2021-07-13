@@ -31,7 +31,7 @@ class _SariskaChatHomeState extends State<SariskaChatHome>
     var token = await fetchToken();
     final options = PhoenixSocketOptions(params: {"token": token});
     final socket = PhoenixSocket(
-        "wss://api.sariska.io/api/v1/messaging/websocket/websocket",
+        "wss://api.sariska.io/api/v1/messaging/websocket",
         socketOptions: options);
     await socket.connect();
     _channel = socket.channel("chat:Chat10Feb");
